@@ -9,14 +9,14 @@ const validator=require('express-joi-validation').createValidator({});
 
 const registerSchema=Joi.object({
     // minimum length for username =3 and maximum 12 and password has minimum=6 and max=12
-    username: Joi.string().min(3).max(12), 
-    password: Joi.string().min(6).max(12),
-    mail: Joi.string().email(),
+    username: Joi.string().min(3).max(12).required(), 
+    password: Joi.string().min(6).max(12).required(),
+    mail: Joi.string().email().required(),
 });
 
 const loginSchema=Joi.object({
-    password: Joi.string().min(6).max(12),
-    mail: Joi.string().email(),   
+    password: Joi.string().min(6).max(12).required(),
+    mail: Joi.string().email().required(),   
 })
 
 // validator is used to validate that correct data is send 

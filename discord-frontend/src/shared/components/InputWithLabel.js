@@ -1,5 +1,5 @@
 import React from "react";
-import { style, styled } from "@mui/system";
+import { styled } from "@mui/system";
 
 const Wrapper = styled("div")({
   display: "flex",

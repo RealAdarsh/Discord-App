@@ -26,7 +26,7 @@ const AuthBox = (props) => {
           borderRadius: "5px",
           boxShadow: "0 2px 10px 0 rgb(0 0 0 / 20%)",
           display: "flex",
-          flexDirection: "coloumn",
+          flexDirection: "column",
           padding: "25px",
         }}
       >

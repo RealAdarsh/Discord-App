@@ -20,6 +20,9 @@ export const register = async (data) => {
   try {
     return await apiClient.post("/auth/register", data);
   } catch (exception) {
-    return { error: true, exception };
+    return {
+      error: true,
+      exception,
+    };
   }
 };

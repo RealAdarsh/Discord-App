@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import AuthBox from "../../shared/components/AuthBox";
+import LoginPageFooter from "./LoginPageFooter";
 import LoginPageHeader from "./LoginPageHeader";
 import LoginPageInputs from "./LoginPageInputs";
-import LoginPageFooter from "./LoginPageFooter";
 import { validateLoginForm } from "../../shared/utils/validators";
 import { connect } from "react-redux";
 import { getActions } from "../../store/actions/authActions";
@@ -24,7 +24,7 @@ const LoginPage = ({ login }) => {
       password,
     };
 
-    login({ userDetails, navigate });
+    login(userDetails, navigate);
   };
   return (
     <AuthBox>
